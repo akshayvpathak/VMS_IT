@@ -1,0 +1,14 @@
+uuid: ead1c0aa-74a3-4a4b-a503-b88b408dc318
+name: VMSIT
+mail: pathakakshay11111@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
