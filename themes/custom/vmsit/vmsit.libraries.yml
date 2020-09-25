@@ -1,0 +1,35 @@
+bootstrap:
+  version: 4.0.0
+  js:
+    vendor/bootstrap/js/bootstrap.bundle.min.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    theme:
+      vendor/bootstrap/css/bootstrap.min.css: {}
+
+font-awesome:
+  version: 4.7.0
+  css:
+    theme:
+      vendor/font-awesome/css/font-awesome.min.css: {}
+base:
+  version: VERSION
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    theme:
+      css/styles.css: {}
+  
+slick:
+  version: 1.8.1
+  js:
+    vendor/slick/slick.min.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    theme:
+      #vendor/slick/slick.css: {}
+      #vendor/slick/slick-theme.css: {}
