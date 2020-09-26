@@ -23,6 +23,7 @@ module:
   commerce_promotion: 0
   commerce_store: 0
   commerce_tax: 0
+  commerce_variation_cart_form: 0
   config: 0
   contact: 0
   contextual: 0
@@ -47,6 +48,8 @@ module:
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
   link: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
@@ -83,6 +86,7 @@ theme:
   classy: 0
   bartik: 0
   seven: 0
+  vmsit: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

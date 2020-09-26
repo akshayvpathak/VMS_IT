@@ -57,17 +57,17 @@
  */
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-
+{{ attach_library('vmsit/slickfrontpage') }}
   <a id="top"></a>
   {# header top #}
   {% if page.top_header_left or page.top_header_center or page.top_header_right %}
   <div class="header-top" id="header-top">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-1">
           {{ page.top_header_left }}
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
           {{ page.top_header_center }}
         </div>
         <div class="col-md-3">
@@ -78,77 +78,22 @@
   </div>
   {% endif %}
 
-  {# Navbar #}
-  <div class="header" id="header">
-    {% block navbar %}   
-    <div class="container">
-      <div class="row">
-      <div class="col-md-4 nav-module logo-module left">
-        {{ page.branding }} 
-      </div>
-      <div class="col-md-8 nav-module menu-module left" id="main-navigation">
-        {{ page.navigation }}
-      </div>
-
-    <!--end nav bar-->
-    <div class="nav-mobile-toggle visible-sm visible-xs">
-      <i class="fa fa-bars"></i>
-    </div>
-    </div>
-    </div>
-    {% endblock %}
-  </div>	
-
-{{ page.modal }}
-
-
-{# Fullwidth block #}
-{% if page.fullwidth  %}
-    <div class="fullwidth-block-wrapper">
-  {% block fullwidth %}
-      {{ page.fullwidth }}
-   {% endblock %}
-    </div>
-{% endif %}
-{# End Fullwidth block #}
-
-{# Main #}
-{% block main %}
-  <div role="main" id="main-container-fullwidth" class="main-container-fullwidth transition--fade">
-
-{# Title #}
-{% if page.title  %}
-<div class="title-wrapper">
-      {# Title #}
-      {% block title %}
-          {{ page.title }}
-      {% endblock %}	 
-</div>
-{% endif %}
-{# End Title #}
-		
-        {# Action Links #}
-        {% if action_links %}
-          {% block action_links %}
-            <ul class="action-links">{{ action_links }}</ul>
-          {% endblock %}
-        {% endif %}
-
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            {{ page.help }}
-          {% endblock %}
-        {% endif %}
-
-        {# Content #}
-        {% block content %}
+  {# Content #}
+    {% block content %}
+      <div class="main-content-inner container-fluid">
           <a id="main-content"></a>
           {{ page.content }}
-        {% endblock %}
+      </div>
+    {% endblock %}
+  {# Content #}
 
-  </div>
-{% endblock %}
+  {% if page.content_bottom %}
+    {% block content_bottom %}
+      <div class="main-content-bottom">
+        {{ page.content_bottom }}
+      </div>
+    {% endblock %}
+  {% endif %}
 
 {% if page.postscript_first or page.postscript_second %}
 {% block postcript %}

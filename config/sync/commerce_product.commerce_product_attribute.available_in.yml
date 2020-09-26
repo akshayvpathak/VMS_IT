@@ -1,0 +1,7 @@
+uuid: 7f82c449-8472-4a42-be94-25c448d42396
+langcode: en
+status: true
+dependencies: {  }
+id: available_in
+label: 'Available in'
+elementType: commerce_product_rendered_attribute

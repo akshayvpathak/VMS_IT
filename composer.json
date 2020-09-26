@@ -19,6 +19,7 @@
         "drupal/admin_toolbar": "^2.3",
         "drupal/better_exposed_filters": "^5.0@beta",
         "drupal/commerce": "^2.21",
+        "drupal/commerce_variation_cart_form": "^1.2",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
@@ -28,6 +29,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/physical": "^1.1",
         "drupal/search_api": "^1.17",
+        "drupal/tvi": "^1.0@RC",
         "drupal/views_bootstrap": "^4.3",
         "drupal/views_taxonomy_term_name_into_id": "^1.0@alpha"
     },

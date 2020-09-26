@@ -1,0 +1,17 @@
+uuid: 9f7b516e-0248-4bdf-b14c-4b170ee0c604
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: products
+name: Products
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

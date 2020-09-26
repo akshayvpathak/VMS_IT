@@ -9,7 +9,6 @@ libraries:
   - vmsit/bootstrap
   - vmsit/font-awesome
   - vmsit/base
-  - vmsit/slick
 regions:
   top_header_left: 'Top header left'
   top_header_center: 'Top header center'

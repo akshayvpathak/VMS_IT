@@ -1,0 +1,19 @@
+uuid: 5dcea4fb-c2ee-4271-b3cf-771308ad1d8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - text
+id: commerce_product.field_shelf_life
+field_name: field_shelf_life
+entity_type: commerce_product
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

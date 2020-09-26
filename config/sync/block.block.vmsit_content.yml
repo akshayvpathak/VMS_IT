@@ -1,0 +1,22 @@
+uuid: d1069b89-7b4a-47a3-b95a-380a511317b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vmsit
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: vmsit_content
+theme: vmsit
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

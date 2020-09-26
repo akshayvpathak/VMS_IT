@@ -1,0 +1,27 @@
+uuid: af12c4c5-dae2-421e-8bfb-2bc999a36ba6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testing.field_product_carousel_slick
+    - node.type.testing
+  module:
+    - entity_reference_revisions
+    - user
+id: node.testing.default
+targetEntityType: node
+bundle: testing
+mode: default
+content:
+  field_product_carousel_slick:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,31 @@
+uuid: 2318b025-94bd-44ad-af39-4ee44cdcb15f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_carousel_slick
+    - node.type.testing
+    - paragraphs.paragraphs_type.slick_product_carousel
+  module:
+    - entity_reference_revisions
+id: node.testing.field_product_carousel_slick
+field_name: field_product_carousel_slick
+entity_type: node
+bundle: testing
+label: 'Product Carousel slick'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slick_product_carousel: slick_product_carousel
+    target_bundles_drag_drop:
+      slick_product_carousel:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

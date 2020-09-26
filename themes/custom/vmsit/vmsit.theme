@@ -113,3 +113,13 @@ function vmsit_preprocess_commerce_product_variation__variation_teaser(&$variabl
   $is_mobile = $detect->isMobile();
   $variables['is_mobile'] = $is_mobile;
 }
+
+/**
+ * add class on product categories carousel
+ */
+function vmsit_preprocess_paragraph__slick_product_carousel(&$variables){
+  $variables['attributes']['class'][] = 'slick-product-carousel';
+}
+function vmsit_preprocess_paragraph__slick_categories_carousel(&$variables){
+  $variables['attributes']['class'][] = 'slick-categories-carousel';
+}

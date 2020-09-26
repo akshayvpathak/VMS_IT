@@ -1,0 +1,22 @@
+uuid: e1c8f8b7-1d4d-4a44-b53d-25d622960797
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - vmsit
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: vmsit_help
+theme: vmsit
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -19,6 +19,7 @@
    * @ingroup themeable
    */
   #}
+  {{ attach_library('vmsit/slickproduct') }}
   {%
     set classes = [
     'commerce-product',
@@ -33,7 +34,7 @@
       </div>
       <div class="col-md-6">
         <div class="offer-text">
-        {{- product.variation_field_dptext -}}
+        {{- product.variation_field_discount_percentage -}}
         </div>
         <div class="product-name">
             {{- product.title -}}

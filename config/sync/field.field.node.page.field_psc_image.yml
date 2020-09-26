@@ -1,0 +1,31 @@
+uuid: c1289791-9205-4b29-b775-d8fbc2ba1f4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_psc_image
+    - node.type.page
+    - paragraphs.paragraphs_type.slick_product_carousel
+  module:
+    - entity_reference_revisions
+id: node.page.field_psc_image
+field_name: field_psc_image
+entity_type: node
+bundle: page
+label: 'psc image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slick_product_carousel: slick_product_carousel
+    target_bundles_drag_drop:
+      slick_product_carousel:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

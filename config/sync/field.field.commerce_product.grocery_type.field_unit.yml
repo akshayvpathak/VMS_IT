@@ -1,0 +1,21 @@
+uuid: 23752afa-45ac-405f-ad19-a92d85036457
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.grocery_type
+    - field.storage.commerce_product.field_unit
+  module:
+    - physical
+id: commerce_product.grocery_type.field_unit
+field_name: field_unit
+entity_type: commerce_product
+bundle: grocery_type
+label: Unit
+description: 'Enter the unit of the product variation.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: physical_measurement

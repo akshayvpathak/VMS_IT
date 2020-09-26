@@ -1,0 +1,21 @@
+uuid: d5cd3dff-d9e2-4333-b8e2-c393aa218287
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.grocery_type
+    - field.storage.commerce_product.field_marketed_by
+  module:
+    - text
+id: commerce_product.grocery_type.field_marketed_by
+field_name: field_marketed_by
+entity_type: commerce_product
+bundle: grocery_type
+label: 'Marketed by'
+description: Address.
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

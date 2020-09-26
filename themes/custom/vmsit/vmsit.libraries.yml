@@ -23,7 +23,7 @@ base:
     theme:
       css/styles.css: {}
   
-slick:
+slickfrontpage:
   version: 1.8.1
   js:
     vendor/slick/slick.min.js: {}
@@ -31,5 +31,16 @@ slick:
     - core/jquery
   css:
     theme:
-      #vendor/slick/slick.css: {}
+      css/slickfrontpage.css: {}
+      #vendor/slick/slick-theme.css: {}
+
+slickproduct:
+  version: 1.8.1
+  js:
+    vendor/slick/slick.min.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    theme:
+      css/slick.css: {}
       #vendor/slick/slick-theme.css: {}
