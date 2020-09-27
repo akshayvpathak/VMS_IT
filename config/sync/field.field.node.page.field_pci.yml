@@ -1,0 +1,34 @@
+uuid: 8754d3f7-76ef-4364-9fbe-8ee8596d7cf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pci
+    - node.type.page
+    - paragraphs.paragraphs_type.slick_categories_carousel
+  module:
+    - entity_reference_revisions
+id: node.page.field_pci
+field_name: field_pci
+entity_type: node
+bundle: page
+label: 'Product categories Images'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slick_categories_carousel: slick_categories_carousel
+    target_bundles_drag_drop:
+      slick_categories_carousel:
+        enabled: true
+        weight: 3
+      slick_product_carousel:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

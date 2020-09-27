@@ -1,0 +1,43 @@
+uuid: 837ebfad-dd73-4dcd-aebc-d203f5bd4401
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_reference
+    - node.type.page
+    - paragraphs.paragraphs_type.product_block
+  module:
+    - entity_reference_revisions
+id: node.page.field_product_reference
+field_name: field_product_reference
+entity_type: node
+bundle: page
+label: 'Product reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      product_block: product_block
+    target_bundles_drag_drop:
+      banner_carousel_1:
+        weight: 6
+        enabled: false
+      product_block:
+        enabled: true
+        weight: 7
+      slick_categories_carousel:
+        weight: 8
+        enabled: false
+      slick_item:
+        weight: 9
+        enabled: false
+      slick_product_carousel:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

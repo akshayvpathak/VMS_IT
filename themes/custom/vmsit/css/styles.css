@@ -63,6 +63,30 @@ body {
   text-decoration: none;
 }
 
+.slick-banner-carousel .slick-slide img {
+  height: max-content;
+  width: 80%;
+}
+
+.block-title {
+  columns: #333333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.more-link {
+  text-align: right;
+}
+.more-link a {
+  color: #E96125;
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid #dbdbdb;
+}
+.more-link a:hover, .more-link a:focus, .more-link a:visited {
+  color: #E96125;
+}
+
 .commerce-product--full .offer-text {
   display: inline-block;
   background-color: #51AA1B;

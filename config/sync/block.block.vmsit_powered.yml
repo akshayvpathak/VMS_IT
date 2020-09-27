@@ -11,7 +11,7 @@ _core:
 id: vmsit_powered
 theme: vmsit
 region: top_header_left
-weight: 10
+weight: -3
 provider: null
 plugin: system_powered_by_block
 settings:

@@ -13,7 +13,7 @@ _core:
 id: vmsit_account_menu
 theme: vmsit
 region: top_header_left
-weight: 0
+weight: -4
 provider: null
 plugin: 'system_menu_block:account'
 settings:

@@ -1,0 +1,28 @@
+uuid: 7e6563c1-256b-4a1d-8cdb-107e1148498c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slick_images_categorii
+    - media.type.image
+    - paragraphs.paragraphs_type.slick_item
+id: paragraph.slick_item.field_slick_images_categorii
+field_name: field_slick_images_categorii
+entity_type: paragraph
+bundle: slick_item
+label: 'Slick Images Categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

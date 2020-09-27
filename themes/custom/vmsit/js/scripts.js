@@ -34,4 +34,15 @@ jQuery(document).ready(function(){
     variableWidth: false,
     speed: 1000,
   });
+  jQuery('.slick-banner-carousel').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    autoplay: true,
+    autoplayspeed: 1000,
+    variableWidth: false,
+    speed: 1000,
+  });
 })

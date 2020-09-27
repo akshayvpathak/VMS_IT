@@ -1,0 +1,21 @@
+uuid: 1c88cf94-f388-47cc-8eaf-e311e85a8bf4
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - vmsit
+id: cart
+theme: vmsit
+region: top_header_right
+weight: 0
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility: {  }

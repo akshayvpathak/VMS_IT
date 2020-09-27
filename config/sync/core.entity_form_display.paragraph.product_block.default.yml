@@ -1,0 +1,16 @@
+uuid: abd7af13-122e-49ba-84e9-92ea27a3ec82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_block.field_product_
+    - paragraphs.paragraphs_type.product_block
+id: paragraph.product_block.default
+targetEntityType: paragraph
+bundle: product_block
+mode: default
+content: {  }
+hidden:
+  created: true
+  field_product_: true
+  status: true

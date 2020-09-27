@@ -1,0 +1,40 @@
+uuid: ee65c8ed-5939-4858-8254-80c4e1f45b73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adbaner
+    - node.type.page
+    - paragraphs.paragraphs_type.banner_carousel_1
+  module:
+    - entity_reference_revisions
+id: node.page.field_adbaner
+field_name: field_adbaner
+entity_type: node
+bundle: page
+label: AdBANER
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      banner_carousel_1: banner_carousel_1
+    target_bundles_drag_drop:
+      banner_carousel_1:
+        enabled: true
+        weight: 5
+      slick_categories_carousel:
+        weight: 6
+        enabled: false
+      slick_item:
+        weight: 7
+        enabled: false
+      slick_product_carousel:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

@@ -33,7 +33,7 @@ content:
     region: content
   field_old_price:
     weight: 3
-    label: above
+    label: hidden
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol

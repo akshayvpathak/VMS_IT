@@ -800,3 +800,4 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_VMS_dd.inc';
 }
 // </DDSETTINGS>
+$config['system.logging']['error_level']='verbose';

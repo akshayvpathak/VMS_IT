@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_adbaner
+    - field.field.node.page.field_pci
+    - field.field.node.page.field_product_reference
     - field.field.node.page.field_psc_image
     - node.type.page
   module:
@@ -24,6 +27,33 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_adbaner:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_pci:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_product_reference:
+    type: entity_reference_revisions_entity_view
+    weight: 105
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_psc_image:
     type: entity_reference_revisions_entity_view
     weight: 102

@@ -1,0 +1,28 @@
+uuid: 387cee36-6aa6-4815-85bb-a674b0625b67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_
+    - paragraphs.paragraphs_type.product_block
+  module:
+    - block_field
+id: paragraph.product_block.field_product_
+field_name: field_product_
+entity_type: paragraph
+bundle: product_block
+label: 'Product Block'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: 'views_block:top_staples_block-block_1'
+    settings: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:top_staples_block-block_1': 'views_block:top_staples_block-block_1'
+field_type: block_field

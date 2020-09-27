@@ -1,0 +1,10 @@
+uuid: 89217aaa-9cd4-4880-9cc7-05f80e02099b
+langcode: en
+status: true
+dependencies: {  }
+id: product_block
+label: 'Product block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

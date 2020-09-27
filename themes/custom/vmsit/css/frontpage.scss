@@ -1,5 +1,6 @@
 $background-color-header: #273032;
 $redcolor: #E96125;
+$bordercolor: #dbdbdb;
 #header-top{
   background-color: $background-color-header;
 }
@@ -60,3 +61,30 @@ $redcolor: #E96125;
     }
   }
 }
+//banner
+.slick-banner-carousel{
+  .slick-slide {
+    img {
+        height: max-content;
+        width: 80%;
+    }
+  }
+}
+//product block
+.block-title{
+  columns: #333333;
+  font-size: 16px;
+  font-weight: 500;
+}
+ .more-link{
+   text-align: right;
+   a{
+     color: $redcolor;
+     padding: 5px;
+     text-decoration: none;
+     border: 1px solid $bordercolor;
+     &:hover,&:focus,&:visited{
+       color: $redcolor;
+     }
+   }
+ }

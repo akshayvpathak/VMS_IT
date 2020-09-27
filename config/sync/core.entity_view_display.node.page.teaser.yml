@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_adbaner
+    - field.field.node.page.field_pci
+    - field.field.node.page.field_product_reference
     - field.field.node.page.field_psc_image
     - node.type.page
   module:
@@ -29,5 +32,8 @@ content:
     weight: 101
     region: content
 hidden:
+  field_adbaner: true
+  field_pci: true
+  field_product_reference: true
   field_psc_image: true
   search_api_excerpt: true

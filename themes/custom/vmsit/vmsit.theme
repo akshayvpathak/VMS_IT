@@ -123,3 +123,6 @@ function vmsit_preprocess_paragraph__slick_product_carousel(&$variables){
 function vmsit_preprocess_paragraph__slick_categories_carousel(&$variables){
   $variables['attributes']['class'][] = 'slick-categories-carousel';
 }
+function vmsit_preprocess_paragraph__banner_carousel_1 (&$variables){
+  $variables['attributes']['class'][] = 'slick-banner-carousel';
+}
