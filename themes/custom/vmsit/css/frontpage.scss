@@ -45,9 +45,21 @@ $bordercolor: #dbdbdb;
   background-color: $redcolor;
   }
 }
+//div styling
+.frontpage > div{
+    margin: 10px auto;
+    background-color: #fff;
+  }
+ .frontpage{
+   .rowcontent{
+     margin: 0px;
+   }
+ }
+
 //slickcategory carousel
 
 .slick-categories-carousel{
+  background-color: #fff;
   .field__item{
     text-align: center;
   }

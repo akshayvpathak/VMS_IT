@@ -21,7 +21,7 @@
   <h3>{{ title }}</h3>
 {% endif %}
 <div id="{{ id }}" {{ attributes.addClass(classes) }}>
-  <div class="row">
+  <div class="row rowcontent">
     {% for row in rows %}
       <div {{ row_attributes.addClass(options.row_class) }}>
         {{ row }}
