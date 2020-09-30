@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_adbaner
+    - field.field.node.page.field_categories_accordion
     - field.field.node.page.field_pci
     - field.field.node.page.field_product_reference
     - field.field.node.page.field_psc_image
@@ -39,6 +40,18 @@ content:
   field_adbaner:
     type: entity_reference_paragraphs
     weight: 123
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_categories_accordion:
+    type: entity_reference_paragraphs
+    weight: 125
     settings:
       title: Paragraph
       title_plural: Paragraphs

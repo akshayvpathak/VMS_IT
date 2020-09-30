@@ -1,0 +1,25 @@
+uuid: eb8e7c22-df7b-4b29-bf6e-c86bc5ed0c44
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:acbe3321-5d95-4d04-b347-10469d68c838'
+  module:
+    - block_content
+  theme:
+    - vmsit
+id: featuretwoimportantlink
+theme: vmsit
+region: featured_bottom_second
+weight: 0
+provider: null
+plugin: 'block_content:acbe3321-5d95-4d04-b347-10469d68c838'
+settings:
+  id: 'block_content:acbe3321-5d95-4d04-b347-10469d68c838'
+  label: 'feature two important link'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

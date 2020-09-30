@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
     - field.field.node.page.field_adbaner
+    - field.field.node.page.field_categories_accordion
     - field.field.node.page.field_pci
     - field.field.node.page.field_product_reference
     - field.field.node.page.field_psc_image
@@ -33,6 +34,7 @@ content:
     region: content
 hidden:
   field_adbaner: true
+  field_categories_accordion: true
   field_pci: true
   field_product_reference: true
   field_psc_image: true

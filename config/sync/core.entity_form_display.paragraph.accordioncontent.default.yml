@@ -1,0 +1,43 @@
+uuid: 24a70cf4-8172-445b-911b-ba40c6aae581
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordioncontent.field_subcategorydiscount
+    - field.field.paragraph.accordioncontent.field_subcategoryimage
+    - field.field.paragraph.accordioncontent.field_subcategoryname
+    - paragraphs.paragraphs_type.accordioncontent
+  module:
+    - media_library
+    - text
+id: paragraph.accordioncontent.default
+targetEntityType: paragraph
+bundle: accordioncontent
+mode: default
+content:
+  field_subcategorydiscount:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_subcategoryimage:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_subcategoryname:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

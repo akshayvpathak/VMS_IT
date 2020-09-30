@@ -1,0 +1,23 @@
+uuid: 1b74246d-e620-4959-b6dc-fb97b0821076
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.categories_for_facet
+  module:
+    - facets
+  theme:
+    - vmsit
+id: categoriesforfacet
+theme: vmsit
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:categories_for_facet'
+settings:
+  id: 'facet_block:categories_for_facet'
+  label: Categories
+  provider: facets
+  label_display: '0'
+  block_id: categoriesforfacet
+visibility: {  }

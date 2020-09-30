@@ -1,0 +1,49 @@
+uuid: f117b7fa-5847-486f-b241-d1ac35d5124f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_acordionitemheader
+    - paragraphs.paragraphs_type.accordionheader
+    - paragraphs.paragraphs_type.accordionitem1
+  module:
+    - entity_reference_revisions
+id: paragraph.accordionitem1.field_acordionitemheader
+field_name: field_acordionitemheader
+entity_type: paragraph
+bundle: accordionitem1
+label: AcordionitemHeader
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordionheader: accordionheader
+    target_bundles_drag_drop:
+      accordionheader:
+        enabled: true
+        weight: 8
+      accordionitem1:
+        weight: 9
+        enabled: false
+      banner_carousel_1:
+        weight: 10
+        enabled: false
+      product_block:
+        weight: 11
+        enabled: false
+      slick_categories_carousel:
+        weight: 12
+        enabled: false
+      slick_item:
+        weight: 13
+        enabled: false
+      slick_product_carousel:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

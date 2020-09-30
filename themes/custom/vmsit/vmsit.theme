@@ -126,3 +126,12 @@ function vmsit_preprocess_paragraph__slick_categories_carousel(&$variables){
 function vmsit_preprocess_paragraph__banner_carousel_1 (&$variables){
   $variables['attributes']['class'][] = 'slick-banner-carousel';
 }
+function vmsit_preprocess_paragraph__accordion (&$variables){
+  $variables['attributes']['id'][] = 'accordion';
+}
+function vmsit_preprocess_paragraph__accordionitem1 (&$variables){
+  $variables['attributes']['class'][] = 'accordionitem';
+}
+function vmsit_preprocess_paragraph__accordionitem2 (&$variables){
+  $variables['attributes']['class'][] = 'accordionitem';
+}

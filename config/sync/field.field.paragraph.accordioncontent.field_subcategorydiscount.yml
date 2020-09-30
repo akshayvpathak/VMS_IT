@@ -1,0 +1,21 @@
+uuid: 0f5ca52d-a008-49e1-b887-d102fb3f16db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subcategorydiscount
+    - paragraphs.paragraphs_type.accordioncontent
+  module:
+    - text
+id: paragraph.accordioncontent.field_subcategorydiscount
+field_name: field_subcategorydiscount
+entity_type: paragraph
+bundle: accordioncontent
+label: subcategorydiscount
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,25 @@
+uuid: 8ad1f4dc-57fa-40ea-bd3b-fdf917e370ce
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c6c5e957-1f59-433b-90a3-fa21113df632'
+  module:
+    - block_content
+  theme:
+    - vmsit
+id: faturesbottom
+theme: vmsit
+region: featured_bottom
+weight: 0
+provider: null
+plugin: 'block_content:c6c5e957-1f59-433b-90a3-fa21113df632'
+settings:
+  id: 'block_content:c6c5e957-1f59-433b-90a3-fa21113df632'
+  label: 'Fatures Bottom'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

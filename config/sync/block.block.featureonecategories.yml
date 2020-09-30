@@ -1,0 +1,25 @@
+uuid: f115f2af-c92a-4c3f-bbf2-4295c3e005ce
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5c3b1840-4f6e-42ed-bd38-395a9ab9b43f'
+  module:
+    - block_content
+  theme:
+    - vmsit
+id: featureonecategories
+theme: vmsit
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:5c3b1840-4f6e-42ed-bd38-395a9ab9b43f'
+settings:
+  id: 'block_content:5c3b1840-4f6e-42ed-bd38-395a9ab9b43f'
+  label: 'feature one Categories'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

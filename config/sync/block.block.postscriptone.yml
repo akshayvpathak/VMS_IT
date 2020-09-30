@@ -1,0 +1,25 @@
+uuid: d47417a1-6a8b-4d2f-a514-b288a5e2ecb3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d964d198-aa21-4576-901a-c4fe5a5ad6bc'
+  module:
+    - block_content
+  theme:
+    - vmsit
+id: postscriptone
+theme: vmsit
+region: postscript_first
+weight: 0
+provider: null
+plugin: 'block_content:d964d198-aa21-4576-901a-c4fe5a5ad6bc'
+settings:
+  id: 'block_content:d964d198-aa21-4576-901a-c4fe5a5ad6bc'
+  label: 'postscript one'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

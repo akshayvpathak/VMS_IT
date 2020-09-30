@@ -1,0 +1,21 @@
+uuid: 561b16c1-ba81-4cc7-b85d-c3ad719d7474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headertext
+    - paragraphs.paragraphs_type.accordionheader
+  module:
+    - text
+id: paragraph.accordionheader.field_headertext
+field_name: field_headertext
+entity_type: paragraph
+bundle: accordionheader
+label: headertext
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

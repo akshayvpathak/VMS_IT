@@ -1,0 +1,21 @@
+uuid: ffe6b56e-d401-4b60-9adb-1aa6d2e84013
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subcategoryname
+    - paragraphs.paragraphs_type.accordioncontent
+  module:
+    - text
+id: paragraph.accordioncontent.field_subcategoryname
+field_name: field_subcategoryname
+entity_type: paragraph
+bundle: accordioncontent
+label: subcategoryname
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

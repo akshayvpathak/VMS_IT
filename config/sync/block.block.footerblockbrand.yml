@@ -1,0 +1,25 @@
+uuid: 02e58d16-3f87-411c-b14d-a5ae2733f16c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c867bc3b-34dd-464c-a6c0-a8caa3185e07'
+  module:
+    - block_content
+  theme:
+    - vmsit
+id: footerblockbrand
+theme: vmsit
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:c867bc3b-34dd-464c-a6c0-a8caa3185e07'
+settings:
+  id: 'block_content:c867bc3b-34dd-464c-a6c0-a8caa3185e07'
+  label: 'footer block Brand'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

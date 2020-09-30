@@ -1,0 +1,10 @@
+uuid: fafbbf11-5383-44ae-8418-dcfe590df890
+langcode: en
+status: true
+dependencies: {  }
+id: accordionheader
+label: accordionheader
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,41 @@
+uuid: 665828e1-436e-4546-b7b2-6e6f4969128b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordioncontent.field_subcategorydiscount
+    - field.field.paragraph.accordioncontent.field_subcategoryimage
+    - field.field.paragraph.accordioncontent.field_subcategoryname
+    - paragraphs.paragraphs_type.accordioncontent
+  module:
+    - text
+id: paragraph.accordioncontent.default
+targetEntityType: paragraph
+bundle: accordioncontent
+mode: default
+content:
+  field_subcategorydiscount:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_subcategoryimage:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_subcategoryname:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

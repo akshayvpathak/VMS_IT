@@ -46,3 +46,25 @@ jQuery(document).ready(function(){
     speed: 1000,
   });
 })
+jQuery('.accordionitem').click(function (){
+
+  if(jQuery(this).find('span').hasClass('fa-angle-down'))
+  {
+    jQuery('.accordionitem').find('span').addClass('fa-angle-down');
+    jQuery(this).find('span').removeClass('fa-angle-down');
+    jQuery(this).find('span').addClass('fa-angle-up');
+  }
+  else if(jQuery(this).find('span').hasClass('fa-angle-up'))
+  {   
+    jQuery(this).find('span').removeClass('fa-angle-up');
+    jQuery(this).find('span').addClass('fa-angle-down');
+  }
+  if(jQuery(this).children().children().hasClass('collapsed')){
+    jQuery('.accordionitem').css('background-color','white');
+    jQuery(this).css('background-color','#fffbc7');
+  }
+  else
+  {
+    jQuery(this).css('background-color','white');
+  }
+});

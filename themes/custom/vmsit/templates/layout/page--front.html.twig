@@ -1,0 +1,89 @@
+{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+{{ attach_library('vmsit/slickfrontpage') }}
+  <a id="top"></a>
+  {# header top #}
+  {% if page.top_header_left or page.top_header_center or page.top_header_right %}
+  <div class="header-top" id="header-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1">
+          {{ page.top_header_left }}
+        </div>
+        <div class="col-md-8">
+          {{ page.top_header_center }}
+        </div>
+        <div class="col-md-3">
+          {{ page.top_header_right }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {# Content #}
+    {% block content %}
+      <div class="main-content-inner container">
+          <a id="main-content"></a>
+          {{ page.content }}
+      </div>
+    {% endblock %}
+  {# Content #}
+
+  {% if page.content_bottom %}
+    {% block content_bottom %}
+      <div class="main-content-bottom">
+        {{ page.content_bottom }}
+      </div>
+    {% endblock %}
+  {% endif %}
+  <footer class="container-fluid footer">
+  <div class="container">
+{% if page.featured_bottom %}
+<div class="row">
+<div class="col-md-12">
+{{ page.featured_bottom }}
+</div>
+</div>
+{% endif %}
+{% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
+<div class="row featured">
+<div class="col-md-4 featured_bottom_first">
+{{ page.featured_bottom_first }}
+</div>
+<div class="col-md-4 featured_bottom_second ">
+{{ page.featured_bottom_second }}
+</div>
+<div class="col-md-4 featured_bottom_third">
+{{ page.featured_bottom_third }}
+</div>
+</div>
+{% endif %}
+{% if page.footer %}
+<div class="row">
+ <div class="col-md-12">
+        {{ page.footer }}
+  </div>
+  </div>
+  {% endif %}
+{% if page.postscript_first or page.postscript_second %}
+{% block postcript %}
+<section class="postscript">
+  <div class="postscript-first">
+      <div class="row">
+      <div class="col-md-12 postscript_first">
+        {{ page.postscript_first }}
+      </div>
+      </div>
+  </div>
+  <div class="postscript-second">
+      <div class="row">
+      <div class="col-md-12 postscript_second">
+        {{ page.postscript_second }}
+      </div>
+      </div>
+  </div>
+</section>
+{% endblock %}
+{% endif %}
+</div>
+</footer>

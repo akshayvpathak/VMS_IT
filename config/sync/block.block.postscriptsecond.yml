@@ -1,0 +1,25 @@
+uuid: e33dd2b0-11a2-4557-86f7-3f2218472620
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f25088c2-eee6-42ee-801d-d11f029c79b8'
+  module:
+    - block_content
+  theme:
+    - vmsit
+id: postscriptsecond
+theme: vmsit
+region: postscript_second
+weight: 0
+provider: null
+plugin: 'block_content:f25088c2-eee6-42ee-801d-d11f029c79b8'
+settings:
+  id: 'block_content:f25088c2-eee6-42ee-801d-d11f029c79b8'
+  label: 'postscript second'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
