@@ -209,71 +209,54 @@
 {% endblock %}
 
 
-{% if page.featured_bottom or page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
-{% block featured_bottom %}
-{# <section class="featured_bottom"> #}
-<section class="featured-bottom">
-  <div class="featured-bottom">
-    <div class="container">
-      <div class="row">
-      <div class="col-md-12 featured_bottom">
-        {{ page.featured_bottom }}
-      </div>
-      <div class="row">
-      <div class="col-md-3 featured_bottom_first">
-        {{ page.featured_bottom_first }}
-      </div>
-      <div class="col-md-3 featured_bottom_second">
-        {{ page.featured_bottom_second }}
-      </div>
-      <div class="col-md-3 featured_bottom_third">
-        {{ page.featured_bottom_third }}
-      </div>
-      </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endblock %}
+ <footer class="container-fluid footer">
+  <div class="container">
+{% if page.featured_bottom %}
+<div class="row">
+<div class="col-md-12">
+{{ page.featured_bottom }}
+</div>
+</div>
 {% endif %}
-
+{% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
+<div class="row featured">
+<div class="col-md-4 featured_bottom_first">
+{{ page.featured_bottom_first }}
+</div>
+<div class="col-md-4 featured_bottom_second ">
+{{ page.featured_bottom_second }}
+</div>
+<div class="col-md-4 featured_bottom_third">
+{{ page.featured_bottom_third }}
+</div>
+</div>
+{% endif %}
 {% if page.footer %}
-{% block footer %}
-<footer class="bg--dark footer-4" role="contentinfo">
-  <div class="footer__lower">
-    <div class="container">
-      <div class="row">
+<div class="row">
+ <div class="col-md-12">
         {{ page.footer }}
-      </div>
-      <!--end of row-->
-    </div>
-    <!--end of container-->
   </div>
-</footer>
-{% endblock %}
-{% endif %}
-
+  </div>
+  {% endif %}
 {% if page.postscript_first or page.postscript_second %}
 {% block postcript %}
 <section class="postscript">
   <div class="postscript-first">
-    <div class="container">
       <div class="row">
       <div class="col-md-12 postscript_first">
         {{ page.postscript_first }}
       </div>
       </div>
-    </div>
   </div>
   <div class="postscript-second">
-    <div class="container">
       <div class="row">
       <div class="col-md-12 postscript_second">
         {{ page.postscript_second }}
       </div>
       </div>
-    </div>
   </div>
 </section>
 {% endblock %}
 {% endif %}
+</div>
+</footer>
